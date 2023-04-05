@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Login from "./components/Login"
+import Feed from "./components/Feed"
+import Profile from "./components/Profile"
+import Camera from "./components/Camera"
+import AppNavigator from './components/AppNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AppNavigator></AppNavigator>
+    // <View style={styles.container}>
+      
+    //   <StatusBar style="auto" />
+    // </View>
   );
 }
 
